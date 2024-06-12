@@ -21,6 +21,7 @@ namespace Football {
                     break;
                 }
             }
+            Console.WriteLine("Valid Positions: (ST/CF/LW/RW/CAM/LM/RM/CM/CDM/RWB/LWB/LB/CB/RB/GK)");
             for (int i = 0; i < prio; i++) {
                 while (true) {
                     Console.Write("Choose your priority positions [#" + (i + 1) + "]: ");

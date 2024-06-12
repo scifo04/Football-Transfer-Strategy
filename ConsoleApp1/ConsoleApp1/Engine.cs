@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Diagnostics;
 
 namespace Football {
     public class Engine {
@@ -47,8 +48,11 @@ namespace Football {
                 }
             }
 
+            Stopwatch stopWatch = new Stopwatch();
+            stopWatch.Start();
             ITraverse searche = method.Equals("Greedy") ? new Greedy() : new DynamicProgramming();
             List<List<(int id, string name, int rating, string position, int market_value, int agent_fee, int age, bool is_free)>> solutions = searche.getSolutions(pos, prio, budget);
+            stopWatch.Stop();
 
             HashSet<string> uniqueSolutions = new HashSet<string>();
             Random random = new Random();
@@ -80,6 +84,7 @@ namespace Football {
                     }
                 }
             }
+            Console.WriteLine("This process is done in "+stopWatch.ElapsedMilliseconds+"ms");
         }
     }
 }

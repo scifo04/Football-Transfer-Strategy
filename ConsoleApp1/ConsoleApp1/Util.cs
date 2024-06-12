@@ -39,5 +39,12 @@ namespace Football {
             }
             return data;
         }
+        public static double WeightSumModel(List<(int rating, int market_value, int agent_fee, int age)> players) {
+            double ratingSum = players.Sum(p => (p.rating - Dictionary.MinRating) / (double)(Dictionary.MaxRating - Dictionary.MinRating));
+            double transferSum = players.Sum(p => (Dictionary.MaxMarketValue - p.market_value) / (double)(Dictionary.MaxMarketValue - Dictionary.MinMarketValue));
+            double agentSum = players.Sum(p => (Dictionary.MaxAgentFee - p.agent_fee) / (double)(Dictionary.MaxAgentFee - Dictionary.MinAgentFee));
+            double ageSum = players.Sum(p => (Dictionary.MaxAge - p.age) / (double)(Dictionary.MaxAge - Dictionary.MinAge));
+            return ratingSum * Dictionary.WeightRating + transferSum * Dictionary.WeightTransfer + agentSum * Dictionary.WeightAgent + ageSum * Dictionary.WeightAge;
+        }
     }
 }

@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Football {
     public class Engine {
         public static void Start() {
-            List<String> pos = new List<String>();
+            List<string> pos = new List<string>();
             Console.WriteLine("==============================");
             Console.WriteLine("= Football Transfer Strategy =");
             Console.WriteLine("==============================");
@@ -22,7 +23,7 @@ namespace Football {
             }
             for (int i = 0; i < prio; i++) {
                 while (true) {
-                    Console.Write("Choose your priority positions [#"+(i+1)+"]: ");
+                    Console.Write("Choose your priority positions [#" + (i + 1) + "]: ");
                     temp_choice = Convert.ToString(Console.ReadLine());
                     if (Dictionary.LegalPos().IndexOf(temp_choice) != -1) {
                         break;
@@ -44,17 +45,39 @@ namespace Football {
                     break;
                 }
             }
-            if (method.Equals("Greedy")) {
-                ITraverse searche = new Greedy();
-                List<List<(int id, string name, int rating, string position, int market_value, int agent_fee, int age, bool is_free)>> solutions = searche.getSolutions(pos,prio,budget);
-                for (int i = 0; i < solutions.Count; i++) {
-                    for (int j = 0; j < solutions[i].Count; j++) {
-                        Console.WriteLine(solutions[i][j]);
+
+            ITraverse searche = method.Equals("Greedy") ? new Greedy() : new DynamicProgramming();
+            List<List<(int id, string name, int rating, string position, int market_value, int agent_fee, int age, bool is_free)>> solutions = searche.getSolutions(pos, prio, budget);
+
+            HashSet<string> uniqueSolutions = new HashSet<string>();
+            Random random = new Random();
+            int solutionCount = 0;
+            const int maxSolutions = 5;
+
+            Console.WriteLine();
+
+            foreach (var solution in solutions) {
+                if (solution.Count == prio) {
+                    string solutionKey = string.Join(",", solution.Select(player => player.id));
+                    if (!uniqueSolutions.Contains(solutionKey)) {
+                        Console.WriteLine(solutionCount+1);
+                        uniqueSolutions.Add(solutionKey);
+                        solutionCount++;
+                        foreach (var player in solution) {
+                            Console.WriteLine(player.name+": ");
+                            Console.WriteLine("    Rating:        "+player.rating);
+                            Console.WriteLine("    Market Value:  "+player.market_value);
+                            Console.WriteLine("    Agents Fee:    "+player.agent_fee);
+                            Console.WriteLine("    Age:           "+player.age);
+                            Console.WriteLine("    Free Transfer: "+player.is_free);
+                        }
+                        Console.WriteLine();
+
+                        if (solutionCount >= maxSolutions) {
+                            break;
+                        }
                     }
                 }
-            } else {
-                ITraverse searche = new DynamicProgramming();
-                List<List<(int id, string name, int rating, string position, int market_value, int agent_fee, int age, bool is_free)>> solutions = searche.getSolutions(pos,prio,budget);
             }
         }
     }

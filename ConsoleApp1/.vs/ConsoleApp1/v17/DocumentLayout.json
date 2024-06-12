@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Semester4\\IF2211_Stima\\Football-Transfer-Strategy\\ConsoleApp1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2177EE54-03AA-42A9-8A7C-CF4707FB846E}|ConsoleApp1\\ConsoleApp1.csproj|d:\\semester4\\if2211_stima\\football-transfer-strategy\\consoleapp1\\consoleapp1\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2177EE54-03AA-42A9-8A7C-CF4707FB846E}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2177EE54-03AA-42A9-8A7C-CF4707FB846E}|ConsoleApp1\\ConsoleApp1.csproj|d:\\semester4\\if2211_stima\\football-transfer-strategy\\consoleapp1\\consoleapp1\\consoleapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2177EE54-03AA-42A9-8A7C-CF4707FB846E}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\consoleapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2177EE54-03AA-42A9-8A7C-CF4707FB846E}|ConsoleApp1\\ConsoleApp1.csproj|d:\\semester4\\if2211_stima\\football-transfer-strategy\\consoleapp1\\consoleapp1\\datareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2177EE54-03AA-42A9-8A7C-CF4707FB846E}|ConsoleApp1\\ConsoleApp1.csproj|solutionrelative:consoleapp1\\datareader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Driver.cs",
+              "DocumentMoniker": "D:\\Semester4\\IF2211_Stima\\Football-Transfer-Strategy\\ConsoleApp1\\ConsoleApp1\\Driver.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\Driver.cs",
+              "ToolTip": "D:\\Semester4\\IF2211_Stima\\Football-Transfer-Strategy\\ConsoleApp1\\ConsoleApp1\\Driver.cs",
+              "RelativeToolTip": "ConsoleApp1\\Driver.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T05:21:34.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataReader.cs",
+              "DocumentMoniker": "D:\\Semester4\\IF2211_Stima\\Football-Transfer-Strategy\\ConsoleApp1\\ConsoleApp1\\DataReader.cs",
+              "RelativeDocumentMoniker": "ConsoleApp1\\DataReader.cs",
+              "ToolTip": "D:\\Semester4\\IF2211_Stima\\Football-Transfer-Strategy\\ConsoleApp1\\ConsoleApp1\\DataReader.cs",
+              "RelativeToolTip": "ConsoleApp1\\DataReader.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCwAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T03:46:08.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleApp1",
+              "DocumentMoniker": "D:\\Semester4\\IF2211_Stima\\Football-Transfer-Strategy\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+              "RelativeDocumentMoniker": "ConsoleApp1\\ConsoleApp1.csproj",
+              "ToolTip": "D:\\Semester4\\IF2211_Stima\\Football-Transfer-Strategy\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+              "RelativeToolTip": "ConsoleApp1\\ConsoleApp1.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-12T03:44:35.317Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
